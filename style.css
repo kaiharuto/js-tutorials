@@ -2,7 +2,6 @@
 * {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-
 }
 
 h3 {
@@ -45,6 +44,12 @@ ul li.done {
     text-decoration: line-through;
 }
 
+ul li.grabbed {
+    transform: scale(1.2, 1.2);
+    float: left;
+    cursor: grabbing;
+}
+
 /* add checkmark */
 ul li.done::before {
     content: "";
@@ -83,6 +88,7 @@ ul li.done::before {
     display: table;
     clear: both;
 }
+
 /* Style the input */
 input {
     margin: 0;
@@ -110,3 +116,22 @@ input {
 .addBtn:hover {
     background: #bbb;
 }
+
+.dragSelector {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    font-size: 18pt;
+    vertical-align: middle;
+    border-width: 0 2px 2px 0;
+    cursor: grab;
+}
+
+/*.dragSelector::after {
+    content: "";
+    position: absolute;
+
+    border-color: #fff;
+    border-style: none;
+    border-width: 0 2px 2px 0;
+}*/

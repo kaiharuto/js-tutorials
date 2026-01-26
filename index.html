@@ -1,31 +1,26 @@
+<!doctype html>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script src="todoList.js" defer></script>
+    </head>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script src="todoList.js" defer></script>
-</head>
+    <body>
+        <div id="topContainer" class="header">
+            <h2>What's up today?</h2>
+            <input
+                type="text"
+                id="cardDescriptionInput"
+                placeholder="I want to ..."
+            />
+            <span onclick="newElement()" class="addBtn"> Add Task </span>
+        </div>
 
-<body>
-    <div id="topContainer" class="header">
-        <h2>
-            What's up today?
-        </h2>
-        <input type="text" id="cardDescriptionInput" placeholder="I want to ...">
-        <span onclick="newElement()" class="addBtn">
-            Add Task
-        </span>
-    </div>
-
-    <!--make header for task list-->
-    <!--<h3>Your Tasks</h3>-->
-    <ul id="taskList">
-        <li>
-        Try New Recipe
-        </li>
-        <li class="done">
-        Deep Clean
-        </li>
-    </ul>
-</body>
-
+        <!--make header for task list-->
+        <!--<h3>Your Tasks</h3>-->
+        <ul id="taskList">
+            <li>Try New Recipe</li>
+            <li class="done">Deep Clean</li>
+        </ul>
+    </body>
 </html>
